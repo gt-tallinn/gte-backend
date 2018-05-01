@@ -2,15 +2,15 @@ package main
 
 import (
 	"net/http"
-	"github.com/gt-tallinn/request-explorer/handlers/add"
+	"github.com/gt-tallinn/gte-backend/handlers/add"
 	"github.com/sirupsen/logrus"
 	"github.com/mongodb/mongo-go-driver/mongo"
-	storage "github.com/gt-tallinn/request-explorer/storage/mongo"
+	storage "github.com/gt-tallinn/gte-backend/storage/mongo"
 	"os"
 )
 
 func main() {
-	logger := logrus.WithField("app", "request-explorer")
+	logger := logrus.WithField("app", "gte-backend")
 	logrus.StandardLogger().SetLevel(5)
 
 	mongoClient, err := mongo.NewClient(os.Getenv("EXPLORER_MONGODB"))

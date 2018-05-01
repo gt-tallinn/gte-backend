@@ -2,7 +2,7 @@ package mongo
 
 import (
 	"github.com/mongodb/mongo-go-driver/mongo"
-	"github.com/gt-tallinn/request-explorer/handlers/add"
+	"github.com/gt-tallinn/gte-backend/handlers/add"
 	"context"
 )
 
